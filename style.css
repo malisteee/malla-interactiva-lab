@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+#progreso-container {
+  width: 90%;
+  max-width: 600px;
+  height: 25px;
+  margin: 20px auto;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#progreso-barra {
+  width: 0%;
+  height: 100%;
+  background: #ff80ab;
+  transition: width 0.3s;
+}
+#progreso-texto {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+.semestre {
+  border: 2px solid #ff80ab;
+  border-radius: 12px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+}
+.semestre h2 {
+  margin-top: 0;
+  color: black;
+}
+.ramo {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 6px;
+  background: #ffc0cb;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.ramo:hover {
+  transform: scale(1.05);
+}
+.ramo.completado {
+  background: #f5deb3;
+  text-decoration: line-through;
+}
+.ramo.bloqueado {
+  background: #ddd;
+  color: #777;
+  cursor: not-allowed;
+}
