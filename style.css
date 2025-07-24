@@ -9,10 +9,12 @@ h1 {
 }
 #progreso-container {
   width: 90%;
+  max-width: 600px;
   height: 25px;
+  margin: 20px auto;
   background: #eee;
   border-radius: 20px;
-  margin: 20px auto;
+  overflow: hidden;
   position: relative;
 }
 #progreso-barra {
@@ -23,10 +25,15 @@ h1 {
 }
 #progreso-texto {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   text-align: center;
   line-height: 25px;
   font-weight: bold;
+  color: black;
+  z-index: 2;
 }
 .semestre {
   border: 2px solid #ff80ab;
